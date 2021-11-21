@@ -193,6 +193,16 @@
   .header-project-one a {
     text-decoration: none;
   }
+
+  .logo {
+    margin-top: 30px;
+  }
+
+  .logo > a {
+color: white;
+font-size: 20px;
+margin-top: 30px;
+  }
   
   .fab
   .fas {
@@ -235,20 +245,6 @@
   #contacts .icon:hover {
     background-color: #00ffff;
   }
-  
-  
-  @media only screen and (max-width: 767px) {
-    * {
-      margin: auto;
-      padding: auto;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    * {
-      margin: auto;
-      padding: auto;
-    }
    
   }
   
