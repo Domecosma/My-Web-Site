@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+
   
   body {
     background-image: url("images/dark.png");
@@ -236,6 +237,46 @@
   }
   
   
+  @media only screen and (max-width: 480px) {
+    body {
+    
+    }
+
+    body {
+    
+    }
   
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+  
+   }
+  
+   .section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bio {
+    display: flex;
+    justify-content: center;
+    margin-left: 280px;
+  }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 960px) {
+   
+      
+    }
+  
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+  
+   }
+  
+   
   }
   
