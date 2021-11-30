@@ -258,7 +258,8 @@ margin-top: 30px;
     display: block;
   }
 .bar li {
-display: block;
+display: flex;
+justify-content: flex-end;
 font-size: 3em;
 margin-left: 5px;
 padding-bottom: none;
@@ -275,12 +276,17 @@ padding: none;
   margin-right: 0;
 }
 .header {
-  display: block;
-  margin-left: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 0 20px 15px;
 }
 .photo-me img {
   width: 300px;
   position: static;
+}
+.me {
+  margin-bottom: 50px;
 }
 .bio {
   margin: 5px;
@@ -288,10 +294,12 @@ padding: none;
   width: auto;
 }
 
-.me {
-}
 
 .project {
   height: 15em;
   width: 12em;
+}
+
+#contacts {
+  display: block;
 }
