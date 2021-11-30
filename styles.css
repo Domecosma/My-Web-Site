@@ -254,9 +254,6 @@ margin-top: 30px;
   /* Mobile Styles */
 @media only screen and (max-width: 767px) {
 
-  body {
-    background-color: #F09A9D; /* Red */
-  }
   .bar {
     display: block;
   }
@@ -292,4 +289,9 @@ padding: none;
 }
 
 .me {
+}
+
+.project {
+  height: 15em;
+  width: 12em;
 }
