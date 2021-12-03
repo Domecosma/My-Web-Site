@@ -234,11 +234,11 @@ margin-top: 30px;
   .photo-me {
       display: flex;
       flex-direction: column-reverse;
-      margin-left: 5px;
+      margin-left: 10px;
   }
 
   .me {
-      margin: 10px;
+      margin: 0;
   }
 
   .dropdown-menu {
