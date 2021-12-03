@@ -1,0 +1,320 @@
+* {
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+
+body {
+  background-color: #293133;
+}
+
+.navbar {
+  width: 100%;
+}
+.collapse {
+display: flex;
+justify-content: flex-end;
+}
+
+.nav-link {
+  font-size: 2em;
+  margin-right: 50px;
+}
+
+.header {
+margin-top: 200px;
+}
+
+.photo-me {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 50px 0 50px;
+}
+
+.photo-bio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.photo-bio >img {
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:visited:hover
+.btn-secondary:active {
+  background-color: #cc9966;
+}
+
+.dropdown-menu {
+  width: 1100px;
+  text-align: justify;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.above,
+.below,
+.description {
+  font-size: 1em;
+  color: cyan;
+  margin-bottom: 20px;
+}
+
+.me {
+  margin: 30px 0 0 150px;
+}
+
+h1 {
+  font-size: 4em;
+  color: #cc9966;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 300px;
+}
+
+h2 {
+  color: #cc9966;
+  font-family: 'Shippori Antique', sans-serif;
+font-size: 15px;
+}
+
+#projects {
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  height: 28em;
+  width: 22em;
+  border-bottom: 2px solid black;
+  margin: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-one {
+  background-color: #cc9966;
+  background:linear-gradient( #cc9966, #00ffff );
+}
+
+.project-two {
+  background-color: white;
+  background:linear-gradient( white, #cc9966 );
+
+}
+
+.project-three {
+  background-color: #00ffff;
+  background:linear-gradient( #00ffff , white );
+}
+
+.project-four {
+  background-color: #cc9966;
+  background:linear-gradient( #cc9966, #00ffff);
+}
+
+.project-five {
+  background-color: #cc9966;
+  background:linear-gradient( white, #cc9966 );
+}
+
+.project-six {
+  background-color: #cc9966;
+  background:linear-gradient( #00ffff, white );
+}
+
+.header-project-one {
+  font-size: 30px;
+  font-family: 'Shippori Antique', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Shippori Antique', sans-serif;
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+box-sizing: border-box;
+}
+
+.header-project-one a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: 30px;
+}
+
+.logo > a {
+color: white;
+font-size: 25px;
+margin-top: 30px;
+}
+
+.fab
+.fas {
+  margin: 30px 0 0 10px;
+  font-size: 30px;
+}
+
+.footer {
+  height: 200px;
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+
+#contacts a {
+  text-decoration: none;
+
+}
+
+.icon {
+  color: white;
+  padding: 10px;
+  width: 250px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+  border-bottom: 5px solid #cc9966;
+  margin: 0 80px 30px 0;
+}
+
+#contacts .icon:hover {
+  background-color: #00ffff;
+}
+.grid {
+    margin-left: 50px;
+}
+
+
+ /* Solo per Mobile */
+@media only screen and (max-width: 767px) {
+
+  .navbar-nav {
+      display: flex;
+      flex-direction: row;
+  }
+
+
+  .nav-link {
+      font-size: 1.5em;
+      
+  }
+
+
+  .collapse {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .photo-me {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .me {
+      margin: 10px;
+  }
+
+  .dropdown-menu {
+      width:400px;
+      font-size: 0.8em;
+  } 
+
+  .project {
+    height: 24em;
+    width: 18em;
+  }
+
+  .icon {
+    width: 170px;
+    font-size: 15px;
+  }
+
+
+}
+/* Only Tablet */
+@media only screen and (min-width: 767px) and (max-width: 1366px) {
+
+  .navbar-nav {
+      display: flex;
+      flex-direction: row;
+  }
+  .collapse {
+    display: flex;
+    justify-content: flex-start;
+}
+  .dropdown-menu {
+      width: 800;
+      font-size: 0,9em;
+  }
+}
+
+.project {
+  height: 26em;
+  width: 20em;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+   .dropdown-menu{
+      width: 600px;
+      font-size: 0.9em;
+  }
+
+}
+
+/* only for the bio*/
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+  .photo-me {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .me {
+      margin: 10px;
+  }
+
+  
+}
+
+
+
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 1100px) {
+
+.icon {
+  width: 170px;
+  font-size: 15px;
+}
+
+}
