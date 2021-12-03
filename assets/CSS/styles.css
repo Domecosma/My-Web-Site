@@ -221,8 +221,7 @@ margin-top: 30px;
 
 
   .nav-link {
-      font-size: 1.5em;
-      
+      font-size: 1.2em;
   }
 
 
@@ -234,7 +233,11 @@ margin-top: 30px;
   .photo-me {
       display: flex;
       flex-direction: column-reverse;
-      margin-left: 0;
+      margin-left: 10px;
+  }
+
+  .photo-bio >img {
+    width: 300px;
   }
 
   .me {
@@ -243,12 +246,16 @@ margin-top: 30px;
 
   .dropdown-menu {
       width:400px;
-      font-size: 0.8em;
+      font-size: 0.6em;
   } 
 
+  h1 {
+    font-size: 3.2em;
+  }
+
   .project {
-    height: 24em;
-    width: 18em;
+    height: 20em;
+    width: 14em;
   }
 
   .icon {
