@@ -234,7 +234,7 @@ margin-top: 30px;
   .photo-me {
       display: flex;
       flex-direction: column-reverse;
-      margin-left: 10px;
+      margin-left: 0;
   }
 
   .me {
