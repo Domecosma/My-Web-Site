@@ -282,7 +282,7 @@ margin-top: 30px;
 
 
  /* Solo per Mobile */
-@media (max-width: 767px) {
+@media all screen and (max-width: 767px) {
 
   .navbar-nav {
       display: flex;
