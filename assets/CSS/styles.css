@@ -1,15 +1,17 @@
 * {
   font-family: 'Shippori Antique', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 body {
-  background-color: #293133;
+  background-color: rgb(16.1, 19.2, 20);
+  overflow-x: hidden;
 }
 
-.navbar {
-  width: 100%;
-}
+
 .collapse {
 display: flex;
 justify-content: flex-end;
@@ -24,36 +26,6 @@ justify-content: flex-end;
 margin-top: 200px;
 }
 
-.photo-me {
-  display: flex;
-  justify-content: space-around;
-  margin: 100px 50px 0 50px;
-}
-
-.photo-bio {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-}
-
-.photo-bio >img {
-  border: 2px solid white;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.btn-secondary:hover,
-.btn-secondary:visited:hover
-.btn-secondary:active {
-  background-color: #cc9966;
-}
-
-.dropdown-menu {
-  width: 1100px;
-  text-align: justify;
-  padding: 5px;
-  font-size: 1em;
-}
 
 .above,
 .below,
@@ -65,13 +37,97 @@ margin-top: 200px;
 
 .me {
   margin: 30px 0 0 150px;
+  text-shadow: 1px 1px white;
+  height: 100vh;
+  position: relative;
+  top: 200px;
+  left: 50px;
 }
 
 h1 {
+  width: 100%;
   font-size: 4em;
   color: #cc9966;
   margin-bottom: 20px;
+  text-shadow: 2px 2px white;
 }
+
+
+
+.linea-1 {
+  position: absolute;
+  top: 150px;
+  height: 500px;
+  width: 50%;
+  right: -250px;
+  border: 10px solid white;
+  box-shadow: 0px 0px 10px 10px #cc9966;
+
+}
+
+.linea-2 {
+  position: absolute;
+  top: 200px;
+  height: 400px;
+  width: 40%;
+  right: -215px;
+  border-top: 10px solid #cc9966;
+  border-bottom: 10px solid #cc9966;
+  border-left: 10px solid #cc9966;
+  box-shadow: 0px 0px 10px 10px #00ffff;
+
+}
+
+.linea-3 {
+  position: absolute;
+  top: 250px;
+  height: 300px;
+  width: 32%;
+  right: -210px;
+  border-top: 10px solid #00ffff;
+  border-bottom: 10px solid #00ffff;
+  border-left: 10px solid #00ffff;
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+.linea-4 {
+  position: absolute;
+  top: 300px;
+  height: 200px;
+  width: 28%;
+  right: -250px;
+  border: 10px solid white;
+  box-shadow: 0px 0px 10px 10px #cc9966;
+
+}
+
+.linea-5 {
+  position: absolute;
+  top: 350px;
+  height: 100px;
+  width: 21%;
+  right: -215px;
+  border-top: 10px solid #cc9966;
+  border-bottom: 10px solid #cc9966;
+  border-left: 10px solid #cc9966;
+  box-shadow: 0px 0px 10px 10px #00ffff;
+
+}
+
+.linea-6 {
+  position: absolute;
+  top: 380px;
+  height: 40px;
+  width: 17%;
+  right: -210px;
+  border-top: 10px solid #00ffff;
+  border-bottom: 10px solid #00ffff;
+  border-left: 10px solid #00ffff;
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+
+
 
 .container {
   display: flex;
@@ -98,13 +154,20 @@ font-size: 15px;
 .project {
   height: 28em;
   width: 22em;
-  border-bottom: 2px solid black;
   margin: 20px;
   border-radius: 5px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  filter: brightness(50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.project:hover {
+transform: scale(1.1);
+filter: brightness(100%);
 }
 
 .project-one {
@@ -145,6 +208,7 @@ font-size: 15px;
   justify-content: center;
   margin-top: 10px;
   color: white;
+  text-shadow: none;
 }
 
 p {
@@ -203,12 +267,18 @@ margin-top: 30px;
   margin: 0 80px 30px 0;
 }
 
+.icon:hover {
+  transform: translateY(-20px);
+}
+
 #contacts .icon:hover {
   background-color: #00ffff;
 }
 .grid {
     margin-left: 50px;
 }
+
+
 
 
  /* Solo per Mobile */
@@ -230,28 +300,66 @@ margin-top: 30px;
       justify-content: flex-start;
   }
 
-  .photo-me {
-      display: flex;
-      flex-direction: column-reverse;
-      margin-left: 10px;
+  
+  .linea-1 {
+    position: absolute;
+    top: 250px;
+    height: 250px;
+    width: 50%;
+    right: -150px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 10px 10px #cc9966;
+  
   }
-
-  .photo-bio >img {
-    width: 300px;
+  
+  .linea-2 {
+    position: absolute;
+    top: 290px;
+    height: 170px;
+    width: 40%;
+    right: -145px;
+    border-top: 10px solid #cc9966;
+    border-bottom: 10px solid #cc9966;
+    border-left: 10px solid #cc9966;
+    box-shadow: 0px 0px 10px 10px #00ffff;
+  
+  }
+  
+  .linea-3 {
+    position: absolute;
+    top: 330px;
+    height: 90px;
+    width: 32%;
+    right: -150px;
+    border-top: 10px solid #00ffff;
+    border-bottom: 10px solid #00ffff;
+    border-left: 10px solid #00ffff;
+    box-shadow: 0px 0px 10px 10px white;
+  }
+  
+  .linea-4 {
+    display: none;
+  }
+  
+  .linea-5 {
+    display: none;
+  }
+  
+  .linea-6 {
+    display: none;
   }
 
   .me {
-      margin: 0;
+margin-left: -30px;
   }
 
-  .dropdown-menu {
-      width:400px;
-      font-size: 0.6em;
-  } 
 
   h1 {
     font-size: 3.2em;
   }
+
+
+
 
   .project {
     height: 20em;
@@ -263,9 +371,14 @@ margin-top: 30px;
     font-size: 15px;
   }
 
+  .icon:hover {
+    transform: translateX(20px);
+  }
+
 
 }
-/* Only Tablet */
+/**************** Only Tablet ************/
+
 @media only screen and (min-width: 767px) and (max-width: 1366px) {
 
   .navbar-nav {
@@ -276,11 +389,10 @@ margin-top: 30px;
     display: flex;
     justify-content: flex-start;
 }
-  .dropdown-menu {
-      width: 800;
-      font-size: 0,9em;
-  }
+.me {
+  width: 40%;
 }
+
 
 .project {
   height: 26em;
@@ -288,41 +400,6 @@ margin-top: 30px;
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-
-   .dropdown-menu{
-      width: 600px;
-      font-size: 0.9em;
-  }
-
-}
-
-/* only for the bio*/
-
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
-
-  .photo-me {
-      display: flex;
-      flex-direction: column-reverse;
-  }
-
-  .me {
-      margin: 10px;
-  }
-
-  
 }
 
 
-
-
-
-
-@media only screen and (min-width: 500px) and (max-width: 1100px) {
-
-.icon {
-  width: 170px;
-  font-size: 15px;
-}
-
-}
