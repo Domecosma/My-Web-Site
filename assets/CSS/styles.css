@@ -25,6 +25,8 @@ justify-content: flex-end;
 .header {
 margin-top: 200px;
 }
+
+
 .above,
 .below,
 .description {
@@ -34,12 +36,12 @@ margin-top: 200px;
 }
 
 .me {
-  margin: 30px 0 0 150px;
+  margin: 30px 0 0 0;
   text-shadow: 1px 1px white;
   height: 100vh;
   position: relative;
   top: 200px;
-  left: 50px;
+  left: 150px;
 }
 
 h1 {
@@ -96,9 +98,10 @@ h1 {
   height: 200px;
   width: 28%;
   right: -250px;
-  border: 10px solid white;
+  border-top: 10px solid white;
+  border-left: 10px solid white;
+  border-bottom: 10px solid white;
   box-shadow: 0px 0px 10px 10px #cc9966;
-
 }
 
 .linea-5 {
@@ -282,7 +285,7 @@ margin-top: 30px;
 
 
  /* Solo per Mobile */
-@media all screen and (max-width: 767px) {
+@media (max-width: 767px) {
 
   .navbar-nav {
       display: flex;
@@ -292,7 +295,6 @@ margin-top: 30px;
 
   .nav-link {
       font-size: 1.2em;
-      
   }
 
 
@@ -336,7 +338,8 @@ margin-top: 30px;
   
   .linea-6 {
     display: none;
-  
+  }
+
   .me {
     position: relative;
     left: 5px;
@@ -344,13 +347,9 @@ margin-top: 30px;
   }
 
 
-
   h1 {
     font-size: 3.2em;
   }
-
-
-
 
   .project {
     height: 20em;
